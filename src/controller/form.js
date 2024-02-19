@@ -1,5 +1,18 @@
 const { setError } = require('../config/error.js')
-const { createNewFormDataInDB } = require('../repositories/form')
+const {
+  getAllFormsDataFromDB,
+  createNewFormDataInDB
+} = require('../repositories/form')
+
+const getAllFormsData = async (req, res, next) => {
+  try {
+    const formsData = await getAllFormsDataFromDB()
+    console.log(formsData)
+    res.status(200).json({ data: formsData })
+  } catch (error) {
+    return next(setError(400, "Can't find forms"))
+  }
+}
 
 const createNewFormData = async (req, res, next) => {
   try {
@@ -16,4 +29,4 @@ const createNewFormData = async (req, res, next) => {
   }
 }
 
-module.exports = { createNewFormData }
+module.exports = { getAllFormsData, createNewFormData }
