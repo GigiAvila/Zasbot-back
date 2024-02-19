@@ -49,7 +49,7 @@ const FORMINFORMATIONTEMPLATE = (data) => `
         }
 
         textarea {
-            resize: vertical;
+            resize: none;
             background-color: #1E1E1E;
             color: #f2f2f2;
         }
