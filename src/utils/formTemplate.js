@@ -6,10 +6,9 @@ const FORMINFORMATIONTEMPLATE = (data) => `
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-       
-    body {
-        background-color: #1E1E1E
-    }
+        body {
+            background-color: #1E1E1E;
+        }
 
         .container {
             max-width: 600px;
@@ -25,7 +24,7 @@ const FORMINFORMATIONTEMPLATE = (data) => `
         }
 
         h2 {
-            color: #f2f2f2
+            color: #f2f2f2;
         }
 
         form {
@@ -44,17 +43,16 @@ const FORMINFORMATIONTEMPLATE = (data) => `
             margin-bottom: 10px;
             box-sizing: border-box;
             border-radius: 4px;
-            background-color:  #1E1E1E;
+            background-color: #1E1E1E;
             color: #f2f2f2;
             border: none;
         }
 
         textarea {
             resize: vertical;
-        
+            background-color: #1E1E1E;
+            color: #f2f2f2;
         }
-
-
     </style>
 </head>
 <body>
@@ -75,8 +73,7 @@ const FORMINFORMATIONTEMPLATE = (data) => `
             <input type="text" name="phone" value="${data.phone}" readOnly>
 
             <label for="contactText">Consulta</label>
-            <textarea name="contact" value="${data.contactText}" readOnly></textarea>
-
+            <textarea name="contact" value="${data.contactText}" readOnly>${data.contactText}</textarea>
         </form>
     </div>
 </body>
