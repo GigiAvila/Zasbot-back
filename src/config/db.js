@@ -10,6 +10,6 @@ mongoose
     console.log('>>>> Conectado a Mongo DB')
   })
   .catch((err) => {
-    console.log('Error conectado a la DB', err)
+    console.log('Error conectandose a la DB', err)
     process.exit(1)
   })

@@ -58,7 +58,7 @@ const FORMINFORMATIONTEMPLATE = (data) => `
 <body>
     <div class="container">
         <h1>Gracias por contactarnos</h1>
-        <h2>¡Nos comunicaremos en breve!</h2>
+        <h2>¡Nos comunicaremos a la brevedad!</h2>
         <form> 
             <label for="name">Nombre</label>
             <input type="text" name="name" value="${data.name}" readOnly>
